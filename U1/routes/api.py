@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, make_response, request
-
+from models.rol import Rol
 api = Blueprint('api', __name__)
 
 @api.route('/')
@@ -30,3 +30,4 @@ def suma_post():
         jsonify({"msg" : "OK", "code" : 200, "data":{"suma es: ": c}}), 
         200
     )
+
