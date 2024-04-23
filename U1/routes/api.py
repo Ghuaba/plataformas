@@ -1,5 +1,15 @@
 from flask import Blueprint, jsonify, make_response, request
 from models.rol import Rol
+from models.persona import Persona
+from models.censo_persona import Censo_persona
+from models.censo import Censo
+from models.censador import Censador
+from models.motivo_censo import Motivo_censo
+from models.motivo import Motivo
+
+
+
+
 api = Blueprint('api', __name__)
 
 @api.route('/')
